@@ -1,5 +1,11 @@
 # TradeIn - Paper Trading Platform
 
+[![CI/CD](https://github.com/rathodsaurav2907/tradein-paper-trading/actions/workflows/ci.yml/badge.svg)](https://github.com/rathodsaurav2907/tradein-paper-trading/actions/workflows/ci.yml)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](./docker-compose.yml)
+[![Node.js](https://img.shields.io/badge/Node.js-22_LTS-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Redis](https://img.shields.io/badge/Redis-7.0-DC382D?logo=redis&logoColor=white)](https://redis.io/)
+
 A simulated stock trading platform built with Node.js, Express, PostgreSQL, and Redis.
 
 Part of the **[Microservices & ML Data Platform Portfolio](../README.md)**.
