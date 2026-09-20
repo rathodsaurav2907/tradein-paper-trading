@@ -9,6 +9,8 @@ beforeAll(async () => {
   } catch (error) {
     console.error('Database not available:', error.message);
   }
+  // Ensure idempotent re-runs against a non-ephemeral database
+  await pool.query("DELETE FROM users WHERE username = 'testuser' OR email = 'test@tradein.com'");
 });
 
 afterAll(async () => {

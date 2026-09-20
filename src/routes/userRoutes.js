@@ -57,7 +57,7 @@ router.get('/:id', async (req, res) => {
   }
 
   const result = await pool.query(
-    'SELECT * FROM users WHERE user_id = $1 OR id = $1',
+    'SELECT * FROM users WHERE user_id = $1 OR id::text = $1',
     [req.params.id]
   );
 
