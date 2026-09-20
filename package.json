@@ -1,0 +1,28 @@
+{
+  "name": "tradein-paper-trading",
+  "version": "1.0.0",
+  "description": "Paper trading platform for practicing stock trading with simulated accounts",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node database/seed.js",
+    "test": "jest --forceExit --detectOpenHandles",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "redis": "^4.6.12",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "joi": "^17.11.0",
+    "express-async-errors": "^3.1.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "nodemon": "^3.0.1"
+  }
+}
